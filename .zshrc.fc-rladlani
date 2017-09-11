@@ -2,3 +2,7 @@ export PROJECTS=/mnt/g/PROJECTS/
 export MOJITO=${PROJECTS}mojito/
 
 alias ca=\$MOJITO/MOJITO/APP/TOOLS/WIN/DEPS/code_assist/BIN/code_assist
+
+export NVM_DIR="$HOME/.nvm"
+
+[ -s "$NVM_DIR/nvm.sh"  ] && . "$NVM_DIR/nvm.sh"
