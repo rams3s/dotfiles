@@ -36,17 +36,12 @@ plugins=(git gitfast)
 
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
-export GOPATH=$HOME/go
+local host_lc=`hostname -s`
+local host_settings="$HOME/.zshrc.${host_lc:l}"
 
-export PATH=/opt/bin/:/usr/local/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/X11/bin
-export PATH="$PATH":$GOPATH/bin
-
-export MOJITO=~/dev/mojito/
-
-DEFAULT_USER="ozirus"
+if [ -r $host_settings  ]; then
+    echo "Using local host settings: $host_settings"
+    . $host_settings
+fi
 
 alias hg='nocorrect hg'
-alias ca=\$MOJITO/MOJITO/APP/TOOLS/OSX/DEPS/code_assist/BIN/code_assist
-
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

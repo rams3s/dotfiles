@@ -1,0 +1,4 @@
+export PROJECTS=/mnt/g/PROJECTS/
+export MOJITO=${PROJECTS}mojito/
+
+alias ca=\$MOJITO/MOJITO/APP/TOOLS/WIN/DEPS/code_assist/BIN/code_assist
