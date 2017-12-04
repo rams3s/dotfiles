@@ -2,11 +2,13 @@ export GOPATH=$HOME/go
 
 export PATH=/opt/bin/:/usr/local/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/X11/bin
 export PATH="$PATH":$GOPATH/bin
+export VISUAL=/usr/local/bin/vim
 
 export MOJITO=~/dev/mojito/
 
 DEFAULT_USER="ozirus"
 
 alias ca=\$MOJITO/MOJITO/APP/TOOLS/OSX/DEPS/code_assist/BIN/code_assist
+alias tmux="tmux -2"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
