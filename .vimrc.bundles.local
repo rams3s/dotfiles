@@ -1,1 +1,2 @@
 Bundle 'jdonaldson/vaxe'
+Bundle 'tpope/vim-dispatch'
